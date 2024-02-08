@@ -15,7 +15,7 @@ export const SocketContextProvider = ({ children }) => {
   useEffect(() => {
     // Create a new WebSocket connection.
     if (authUser) {
-      const socket = io("http://localhost:8000", {
+      const socket = io("https://vibely-chat-app.onrender.com", {
         query: {
           userId: authUser._id,
         },
